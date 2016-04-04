@@ -102,10 +102,12 @@ body {
   opacity: .3;
 }
 
-.trash {
+.delete {
+  cursor: pointer;
+  margin-top: 5px;
   float: right;
-  margin-top: 3px;
-  display: none;
+  height: 22px;
+  width: 22px;
 }
 
 .show {

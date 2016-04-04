@@ -15,13 +15,13 @@ $(document).ready(function () {
     event.preventDefault();
 
     if($.trim($('#item').val())) {
-      $('<li class="items"></li>').appendTo('#list').html('<span>' + txtval + '</span><img class="trash" src="images/trash.png"/>');
+      $('<li class="items"></li>').appendTo('#list').html('<span>' + txtval + '</span><img class="delete" src="images/trash.png"/>');
       document.getElementById('item').value = '';
     };
   });
 
 // remove item from list
-  $('#list').on('click', '.trash', function(e) {
+  $('#list').on('click', '.delete', function(e) {
     e.preventDefault(); 
     $(this).parent().remove();
   });
@@ -30,9 +30,6 @@ $(document).ready(function () {
   $('#list').on('click', 'li', function() {
     $(this).toggleClass('mark'); 
   });
-
-// sort items
-  $('#list').sortable({ axis: "y" });
   
 // show trash icon over item
   $('#list').on('mouseenter', 'li', function() {

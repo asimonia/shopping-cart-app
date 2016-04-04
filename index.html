@@ -1,27 +1,26 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Shopping List</title>
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="icon" type="image/png" href="favicon.png" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-    <script type="text/javascript" src="js/application.js"></script>
-  </head>
-  <body>
-    <div id="page">
-      <h1 id="header">List</h1>
-      <h2>Buy groceries <span id="counter"></span></h2>
-      <ul>
-        <li id="one" class="hot"><em>fresh</em> figs</li>
-        <li id="two" class="hot">pine nuts</li>
-        <li id="three" class="hot">honey</li>
-        <li id="four">balsamic vinegar</li>
-      </ul>
-      <div id="newItemButton"><button href="#" id="showForm">new item</button></div>
-      <form id="newItemForm">
-        <input type="text" id="itemDescription" placeholder="Add description" />
-        <input type="submit" id="add" value="add" />
-      </form>
-    </div>
-  </body>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+        <title>Shopping List</title>
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="icon" type="image/png" href="favicon.png" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+        <script type="text/javascript" src="js/application.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="input">
+                <img id="top" src="images/top.png"/>
+                <ul id="list">
+                    <li class="items"><span>Cheerios</span><img class="trash" src="images/trash.png" /></li>
+                    <li class="items"><span>Apples</span><img class="trash" src="images/trash.png" /></li>
+                    <li class="items"><span>Tater Tots</span><img class="trash" src="images/trash.png" /></li>
+                    <li class="items"><span>Wine</span><img class="trash" src="images/trash.png" /></li>
+                </ul>
+                <button class="button" style="vertical-align:middle"><span>Add </span></button>
+                <input type="text" id="item" maxlength="30"></input>
+            </div>
+        </div>
+    </body>
 </html>
